@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const candles = [4,4,1,3]
+
+        const tallestCandle = Math.max(...candles); // ... adalah operator spread, untuk melakukan iterasi setiap index
+        const tallestCandleNum = candles.filter(candle => candle === tallestCandle).length;
+
+        console.log(tallestCandle);
+        console.log(tallestCandleNum);
+    </script>
+</body>
+</html>
